@@ -25,8 +25,6 @@ const mailOptions = {
     html: `<h3>Your OTP is </h3><br/> <h1>${otp}</h1>`
 }
 
-
-
 app.get('/', (req, res)=>{
     transporter.sendMail(mailOptions, (err, info)=>{
         if(err){
